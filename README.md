@@ -14,7 +14,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![alt text](image.png)
+![image](https://github.com/evsta24/Blog-preview-card/assets/159118157/6642a40e-9f8b-458e-9731-eabfa4f49b2a)
 
 ## My process
 
