@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figrtree', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.table {
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 15px;
+    max-width: 100%;
+    width: 375px;
+    box-shadow: 8px 8px 0px 2px hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.table:hover {
+    box-shadow: 16px 16px 0px 2px hsl(0, 0%, 7%);
+}
+
+.table__content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.table__content--info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.table__subject {
+   font-weight: 800 ;
+   background-color: hsl(47, 88%, 63%);
+   color: black;
+   padding: 5px 5px;
+   width: 90px;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 13px;
+   text-decoration: none;
+}
+
+.table__information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.table__information h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.table__information h1:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.table__information p {
+    color: hsl(0deg 0% 58.43%);
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.table__avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.table__avatar img {
+    width: 30px;
+}
+
+.table__avatar span {
+    font-weight: 800;
+    font-size: 13px;
+    color: black;
+}
+
+@media only screen and (max-width: 375px) {
+    .table {
+        flex-flow: column wrap;
+        width: 300px;
+    }
+
+    .table__img {
+        height: 200px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .table__information h1 {
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    .table__information {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .table__information p {
+        font-size: 12px;
+    }
+
+    .table__avatar {
+        margin-top: 0px;
+    }
+}
+
+
